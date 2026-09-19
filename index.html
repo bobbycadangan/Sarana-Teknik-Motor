@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarana Teknik Motor | Bengkel servis sepeda motor</title>
+  <meta name="description" content="Sarana Teknik Motor: bengkel servis sepeda motor. Servis berkala, tune-up, ganti oli, rem, kelistrikan, dan overhaul mesin. Hubungi kami atau datang langsung ke bengkel.">
+  <meta name="theme-color" content="#08264A">
+  <meta property="og:title" content="Sarana Teknik Motor">
+  <meta property="og:description" content="Bengkel servis sepeda motor. Diagnosa jelas, pengerjaan rapi.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpolygon points='14,4 34,4 46,24 34,44 14,44 2,24' fill='%230D4C92'/%3E%3Ccircle cx='24' cy='24' r='9' fill='%23F1F4F8'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <script>
+    /* Mode animasi aktif hanya jika pengunjung tidak memilih "kurangi gerakan" di perangkatnya.
+       Timer 2,5 detik adalah pengaman: konten pasti tampil walau script.js gagal dimuat. */
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js');
+      setTimeout(function () { document.documentElement.classList.add('is-ready'); }, 2500);
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="beranda">
+
+  <!-- Kontak, alamat, jam buka, dan link WhatsApp/telepon/peta diatur di bagian BUSINESS pada script.js.
+       Teks di HTML ini adalah nilai bawaan agar halaman tetap terbaca jika JavaScript mati. -->
+
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p>Buka <span data-bind="hours">Senin sampai Sabtu, 08.00–17.30 WITA</span></p>
+      <p>Telepon <a href="tel:+6281337562560" data-href="tel" data-bind="phone">0813-3756-2560</a></p>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="#beranda" aria-label="Sarana Teknik Motor, kembali ke atas">
+        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <polygon points="14,4 34,4 46,24 34,44 14,44 2,24" fill="currentColor"/>
+          <circle cx="24" cy="24" r="9" fill="var(--bg)"/>
+          <circle cx="24" cy="24" r="3" fill="currentColor"/>
+        </svg>
+        <span class="logo__name">Sarana Teknik Motor</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <ul class="nav-list nav-list--left">
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#cara-kerja">Cara kerja</a></li>
+        </ul>
+        <ul class="nav-list nav-list--right">
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="ruler" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="hero__title">Sarana Teknik Motor</h1>
+        <p class="hero__lead">Bengkel servis sepeda motor. Kami periksa dengan teliti, jelaskan temuannya, dan kerjakan dengan rapi.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/6281337562560" data-href="wa">Chat WhatsApp</a>
+          <a class="btn btn--ghost" href="#layanan">Lihat layanan</a>
+        </div>
+
+        <div class="drawing">
+          <svg viewBox="0 0 900 520" role="img" aria-labelledby="wheel-title wheel-desc">
+            <title id="wheel-title">Gambar teknis roda sepeda motor</title>
+            <desc id="wheel-desc">Roda motor dengan ban, velg, jari-jari, cakram rem, dan as roda, lengkap dengan ukuran diameter.</desc>
+
+            <g class="centerlines">
+              <line x1="180" y1="250" x2="720" y2="250"/>
+              <line x1="450" y1="20" x2="450" y2="480"/>
+            </g>
+
+            <g class="wheel">
+              <circle class="tread" cx="450" cy="250" r="192"/>
+              <circle class="line line--heavy draw" style="animation-delay:.1s" cx="450" cy="250" r="205" pathLength="1"/>
+              <circle class="line draw" style="animation-delay:.25s" cx="450" cy="250" r="179" pathLength="1"/>
+              <circle class="line line--heavy draw" style="animation-delay:.4s" cx="450" cy="250" r="166" pathLength="1"/>
+              <circle class="line line--thin draw" style="animation-delay:.55s" cx="450" cy="250" r="158" pathLength="1"/>
+
+              <g class="spokes fade" style="animation-delay:.9s">
+                <line x1="292" y1="250" x2="608" y2="250"/>
+                <line x1="292" y1="250" x2="608" y2="250" transform="rotate(30 450 250)"/>
+                <line x1="292" y1="250" x2="608" y2="250" transform="rotate(60 450 250)"/>
+                <line x1="292" y1="250" x2="608" y2="250" transform="rotate(90 450 250)"/>
+                <line x1="292" y1="250" x2="608" y2="250" transform="rotate(120 450 250)"/>
+                <line x1="292" y1="250" x2="608" y2="250" transform="rotate(150 450 250)"/>
+              </g>
+
+              <g class="fade" style="animation-delay:1.2s">
+                <circle class="disc" cx="450" cy="250" r="100"/>
+                <circle class="plate" cx="450" cy="250" r="64"/>
+                <g class="holes">
+                  <circle cx="450" cy="168" r="6"/>
+                  <circle cx="491" cy="179" r="6"/>
+                  <circle cx="521" cy="209" r="6"/>
+                  <circle cx="532" cy="250" r="6"/>
+                  <circle cx="521" cy="291" r="6"/>
+                  <circle cx="491" cy="321" r="6"/>
+                  <circle cx="450" cy="332" r="6"/>
+                  <circle cx="409" cy="321" r="6"/>
+                  <circle cx="379" cy="291" r="6"/>
+                  <circle cx="368" cy="250" r="6"/>
+                  <circle cx="379" cy="209" r="6"/>
+                  <circle cx="409" cy="179" r="6"/>
+                </g>
+                <circle class="hub" cx="450" cy="250" r="34"/>
+                <circle class="axle" cx="450" cy="250" r="14"/>
+              </g>
+            </g>
+
+            <g class="callouts">
+              <polyline points="335.45,135.45 270,70 150,70"/>
+              <circle cx="335.45" cy="135.45" r="3.5"/>
+              <text x="140" y="75" text-anchor="end">Velg</text>
+
+              <polyline points="585.76,114.24 630,70 750,70"/>
+              <circle cx="585.76" cy="114.24" r="3.5"/>
+              <text x="760" y="75" text-anchor="start">Ban</text>
+
+              <polyline points="440.1,259.9 270,430 150,430"/>
+              <circle cx="440.1" cy="259.9" r="3.5"/>
+              <text x="140" y="435" text-anchor="end">As roda</text>
+
+              <polyline points="520.71,320.71 630,430 750,430"/>
+              <circle cx="520.71" cy="320.71" r="3.5"/>
+              <text x="760" y="435" text-anchor="start">Cakram rem</text>
+            </g>
+
+            <g class="dim">
+              <line class="ext" x1="245" y1="445" x2="245" y2="500"/>
+              <line class="ext" x1="655" y1="445" x2="655" y2="500"/>
+              <line x1="245" y1="490" x2="655" y2="490"/>
+              <path class="arrow" d="M245 490l12-4.5v9z M655 490l-12-4.5v9z"/>
+              <rect x="382" y="477" width="136" height="26" fill="var(--bg)" stroke="none"/>
+              <text x="450" y="496" text-anchor="middle">Ø 17 inci</text>
+            </g>
+          </svg>
+        </div>
+
+        <dl class="specs">
+          <div class="spec">
+            <dt>Jam buka</dt>
+            <dd data-bind="hours">Senin sampai Sabtu, 08.00–17.30 WITA</dd>
+          </div>
+          <div class="spec">
+            <dt>Telepon dan WhatsApp</dt>
+            <dd data-bind="phone">0813-3756-2560</dd>
+          </div>
+          <div class="spec">
+            <dt>Alamat</dt>
+            <dd data-bind="address">Jl. Komodo, Kampung Ka, Kec. Langke Rembong, Kabupaten Manggarai, Nusa Tenggara Timur</dd>
+          </div>
+          <div class="spec">
+            <dt>Jenis motor</dt>
+            <dd>Matic, bebek, dan sport</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="section section--tint" id="layanan">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Apa yang kami kerjakan</h2>
+          <p>Dari perawatan rutin sampai bongkar mesin. Setiap pekerjaan dimulai dengan pemeriksaan, bukan tebakan.</p>
+        </div>
+
+        <div class="services">
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M20.5 6.5a6 6 0 0 0-7.6 7.6L5 22a2.5 2.5 0 0 0 3.5 3.5l7.9-7.9a6 6 0 0 0 7.6-7.6l-3.6 3.6-3.2-.8-.8-3.2 3.6-3.6z"/></svg>
+            <h3>Servis berkala</h3>
+            <p>Pemeriksaan rutin sesuai jadwal kilometer: rantai atau CVT, filter, busi, dan komponen yang cepat aus.</p>
+          </article>
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 23a11 11 0 1 1 22 0"/><path d="M16 23l5.5-7.5"/><circle cx="16" cy="23" r="1.75"/></svg>
+            <h3>Tune-up dan injeksi</h3>
+            <p>Pembersihan throttle body, cek sensor, dan penyetelan agar tarikan halus dan bensin lebih irit.</p>
+          </article>
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c4 5.5 8 9.6 8 14a8 8 0 0 1-16 0c0-4.4 4-8.5 8-14z"/><path d="M12 19a4 4 0 0 0 4 4"/></svg>
+            <h3>Oli dan filter</h3>
+            <p>Ganti oli mesin, oli gardan, dan filter dengan spesifikasi yang sesuai untuk motor Anda.</p>
+          </article>
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="3"/><circle cx="16" cy="9.5" r="1.2"/><circle cx="22.5" cy="16" r="1.2"/><circle cx="16" cy="22.5" r="1.2"/><circle cx="9.5" cy="16" r="1.2"/></svg>
+            <h3>Rem dan suspensi</h3>
+            <p>Kampas, cakram, minyak rem, shockbreaker, dan bearing roda diperiksa dan diganti bila perlu.</p>
+          </article>
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M18 4L8 18h7l-1 10 10-14h-7l1-10z"/></svg>
+            <h3>Kelistrikan</h3>
+            <p>Aki, sistem pengisian, lampu, starter, dan kabel bodi. Kami telusuri sampai ketemu sumber masalahnya.</p>
+          </article>
+          <article class="service">
+            <svg class="service__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9"/><circle cx="16" cy="16" r="4"/><path d="M16 4v3M16 25v3M4 16h3M25 16h3M7.5 7.5l2.1 2.1M24.5 7.5l-2.1 2.1M7.5 24.5l2.1-2.1M24.5 24.5l-2.1-2.1"/></svg>
+            <h3>Overhaul mesin</h3>
+            <p>Bongkar, ukur, dan rakit ulang sesuai buku servis. Untuk mesin yang boros oli atau kehilangan tenaga.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA KERJA -->
+    <section class="section section--dark" id="cara-kerja">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Dari keluhan sampai motor siap jalan</h2>
+          <p>Empat langkah yang sama untuk setiap motor, dari servis ringan sampai perbaikan besar.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">1</span>
+            <div>
+              <h3>Diagnosa</h3>
+              <p>Kami dengar keluhan Anda, lalu periksa dan uji motor untuk menemukan penyebabnya.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">2</span>
+            <div>
+              <h3>Penjelasan dan estimasi</h3>
+              <p>Temuan dan biaya dijelaskan sebelum pekerjaan dimulai. Anda yang memutuskan.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">3</span>
+            <div>
+              <h3>Pengerjaan</h3>
+              <p>Teknisi mengerjakan sesuai kesepakatan. Suku cadang lama bisa Anda lihat.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">4</span>
+            <div>
+              <h3>Uji dan serah terima</h3>
+              <p>Motor diuji jalan, dibersihkan dari sisa oli, lalu diserahkan dengan penjelasan pekerjaan.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section" id="galeri">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Suasana bengkel</h2>
+          <p>Ruang kerja, peralatan, dan pengerjaan motor. Klik foto untuk memperbesar.</p>
+        </div>
+
+        <!-- Simpan foto Anda di folder images/ dengan nama foto-1.jpg sampai foto-6.jpg.
+             Rasio terbaik 4:3 (contoh 1200 x 900 px). Ganti teks alt dan caption sesuai isi foto. -->
+        <div class="gallery">
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-1.jpg" aria-label="Perbesar foto: Area servis">
+              <img src="images/area servis.jpeg" alt="Area servis di Sarana Teknik Motor" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Area servis</figcaption>
+          </figure>
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-2.jpg" aria-label="Perbesar foto: Peralatan">
+              <img src="images/peralatan.jpeg" alt="Peralatan kerja teknisi" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Peralatan</figcaption>
+          </figure>
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-3.jpg" aria-label="Perbesar foto: Pengerjaan mesin">
+              <img src="images/servis mesin.jpeg" alt="Teknisi mengerjakan mesin motor" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Pengerjaan mesin</figcaption>
+          </figure>
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-4.jpg" aria-label="Perbesar foto: Ruang tunggu">
+              <img src="images/ruang tunggu.jpeg" alt="Ruang tunggu pelanggan" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Ruang tunggu</figcaption>
+          </figure>
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-5.jpg" aria-label="Perbesar foto: Suku cadang">
+              <img src="images/suku cadang.jpeg" alt="Rak suku cadang dan oli" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Suku cadang</figcaption>
+          </figure>
+          <figure class="shot">
+            <button class="shot__btn" type="button" data-ph="Simpan foto di images/foto-6.jpg" aria-label="Perbesar foto: Tampak depan">
+              <img src="images/tampak depan.jpeg" alt="Tampak depan bengkel Sarana Teknik Motor" width="1200" height="900" loading="lazy">
+            </button>
+            <figcaption>Tampak depan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section section--dark section--contact" id="kontak">
+      <div class="wrap contact">
+        <div class="contact__info">
+          <h2>Datang ke bengkel atau hubungi kami</h2>
+          <p class="contact__lead">Motor bermasalah? Kirim pesan lewat WhatsApp dengan tipe motor dan keluhannya, kami bantu arahkan.</p>
+
+          <dl class="details">
+            <div class="details__row">
+              <dt>Alamat</dt>
+              <dd data-bind="address">Jl. Komodo, Kampung Ka, Kec. Langke Rembong, Kabupaten Manggarai, Nusa Tenggara Timur</dd>
+            </div>
+            <div class="details__row">
+              <dt>Telepon</dt>
+              <dd><a href="tel:+6281337562560" data-href="tel" data-bind="phone">0813-3756-2560</a></dd>
+            </div>
+            <div class="details__row">
+              <dt>WhatsApp</dt>
+              <dd><a href="https://wa.me/6281337562560" data-href="wa" data-bind="phone">0813-3756-2560</a></dd>
+            </div>
+            <div class="details__row">
+              <dt>Jam buka</dt>
+              <dd data-bind="hours">Senin sampai Sabtu, 08.00–17.30 WITA</dd>
+            </div>
+          </dl>
+
+          <div class="contact__actions">
+            <a class="btn btn--signal" href="tel:+6281337562560" data-href="tel">Telepon sekarang</a>
+            <a class="btn btn--outline" href="https://wa.me/6281337562560" data-href="wa">Chat WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Peta interaktif Google Maps (gratis, tanpa API key), memakai koordinat lokasi bengkel.
+             Kalau lokasi pindah: buka Google Maps > cari alamat baru > klik kanan di peta > "Data
+             apa yang ada di sini?" untuk lihat koordinatnya, lalu ganti angka lat,lng di src iframe
+             di bawah dan di BUSINESS.mapsQuery pada script.js. -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=-8.6025898,120.4557273&z=17&output=embed"
+            title="Peta lokasi Sarana Teknik Motor"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+          <a class="map__bar" href="https://www.google.com/maps/search/?api=1&query=-8.6025898,120.4557273" data-href="maps" aria-label="Buka lokasi bengkel di Google Maps">Buka di Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="ruler ruler--light" aria-hidden="true"></div>
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <polygon points="14,4 34,4 46,24 34,44 14,44 2,24" fill="currentColor"/>
+          <circle cx="24" cy="24" r="9" fill="var(--ink-deep)"/>
+          <circle cx="24" cy="24" r="3" fill="currentColor"/>
+        </svg>
+        <p>Sarana Teknik Motor<br><span>Bengkel servis sepeda motor</span></p>
+      </div>
+      <nav class="footer__nav" aria-label="Navigasi footer">
+        <a href="#layanan">Layanan</a>
+        <a href="#cara-kerja">Cara kerja</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="footer__contact">
+        <p data-bind="phone">0813-3756-2560</p>
+        <p data-bind="address">Jl. Komodo, Kampung Ka, Kec. Langke Rembong, Kabupaten Manggarai, Nusa Tenggara Timur</p>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <p>&copy; <span id="year">2026</span> Sarana Teknik Motor. Hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Bilah aksi cepat untuk layar kecil -->
+  <div class="actionbar">
+    <a class="btn btn--signal" href="tel:+6281337562560" data-href="tel">Telepon</a>
+    <a class="btn btn--outline" href="https://wa.me/6281337562560" data-href="wa">WhatsApp</a>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Pratinjau foto">
+    <form method="dialog"><button class="lightbox__close" aria-label="Tutup pratinjau">Tutup</button></form>
+    <div class="lightbox__stage">
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Foto sebelumnya">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15,4 7,12 15,20"/></svg>
+      </button>
+      <img alt="">
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Foto berikutnya">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9,4 17,12 9,20"/></svg>
+      </button>
+    </div>
+    <p class="lightbox__cap"></p>
+  </dialog>
+
+</body>
+</html>
