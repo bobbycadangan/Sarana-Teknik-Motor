@@ -833,8 +833,39 @@ h2 {
 
   .site-header.is-open .site-nav { display: block; }
 
-  .nav-list { flex-direction: column; gap: 0; }
-  .nav-list a { display: block; padding-block: .85rem; border-bottom: 1px solid var(--steel); }
+  /* Panel menu: jika layar pendek, panel bisa digulir sendiri */
+  .site-nav {
+    max-height: calc(100vh - 100%);
+    max-height: calc(100dvh - 100%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  /* Reset aturan grid desktop supaya kedua daftar tersusun satu kolom penuh */
+  .nav-list,
+  .nav-list--left,
+  .nav-list--right {
+    grid-area: auto;
+    justify-self: stretch;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    width: 100%;
+    padding: .95rem 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--steel);
+    background-image: none;
+  }
+
+  /* Hilangkan garis di item terakhir */
+  .nav-list--right li:last-child a { border-bottom: 0; }
+
+  .nav-list a:hover,
+  .nav-list a.is-current { color: var(--blue); }
 
   .footer__grid { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .footer__brand { justify-content: center; }
