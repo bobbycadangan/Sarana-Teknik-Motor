@@ -18,7 +18,7 @@
     phoneIntl: '6281337562560',       // format internasional tanpa +, tanpa spasi (62 = Indonesia)
     address: 'Jl. Komodo, Kampung Ka, Kec. Langke Rembong, Kabupaten Manggarai, Nusa Tenggara Timur',
     hours: 'Senin sampai Sabtu, 08.00–17.30 WITA',
-    whatsappText: 'Halo Sarana Teknik Motor, saya ingin bertanya tentang servis motor.',
+    whatsappText: 'Halo Sarana Teknik Motor, saya ingin bertanya tentang sparepart motor.',
     mapsQuery: '-8.6025898,120.4557273', // koordinat lokasi bengkel (lat,lng) agar link "Buka di Google Maps" akurat
   };
   /* ------------------------------------ */
